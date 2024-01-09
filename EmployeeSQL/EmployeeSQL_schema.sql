@@ -1,4 +1,4 @@
-
+''' > Data/titles.csv'''
 CREATE TABLE titles (
 	title_id VARCHAR(10) NOT NULL,
 	title VARCHAR(25),
@@ -6,6 +6,7 @@ CREATE TABLE titles (
 	PRIMARY KEY (title_id)
 );
 
+''' > Data/employees.csv'''
 CREATE TABLE employees (
 	emp_no VARCHAR(10) NOT NULL,
 	emp_title_id VARCHAR(10) REFERENCES titles (title_id),
@@ -19,7 +20,7 @@ CREATE TABLE employees (
 );
 
 
-
+''' > Data/departments.csv'''
 CREATE TABLE departments (
 	dept_no VARCHAR(10) NOT NULL,
 	dept_name VARCHAR(30),
@@ -27,6 +28,7 @@ CREATE TABLE departments (
 	PRIMARY KEY (dept_no)
 );
 
+''' > Data/dept_emp.csv'''
 CREATE TABLE dept_emp (
 	id SERIAL,
 	emp_no VARCHAR(10) NOT NULL,
@@ -37,6 +39,7 @@ CREATE TABLE dept_emp (
 	FOREIGN KEY (dept_no) REFERENCES departments (dept_no)
 );
 
+''' > Data/dept_manager.csv'''
 CREATE TABLE dept_manager (
 	id SERIAL,
 	dept_no VARCHAR(10) NOT NULL,
@@ -47,6 +50,7 @@ CREATE TABLE dept_manager (
 	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 );
 
+''' > Data/salaries.csv'''
 CREATE TABLE salaries (
 	id SERIAL,
 	emp_no VARCHAR(10) NOT NULL,

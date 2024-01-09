@@ -16,7 +16,7 @@ where hire_date between '1986-01-01' and '1986-12-31';
 select d.dept_no, d.dept_name,
 	e.emp_no as mgr_emp_no, e.last_name as mgr_last_name, e.first_name as mgr_first_name
 from departments d
-	inner join dept_manager dm on d.dept_no = dm.dept_no
+	left join dept_manager dm on d.dept_no = dm.dept_no
 	left join employees e on e.emp_no = dm.emp_no;
 
 
