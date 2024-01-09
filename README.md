@@ -51,5 +51,5 @@ For this project, I’ll design the tables to hold the data from the CSV files, 
 ## Database Diagram
 
 *   Database ERD.png
-![Picture1](Database ERD.png)
+![Picture1](https://github.com/AprilHolmes7825/sql-challenge/blob/main/Database%20ERD.png)
 
