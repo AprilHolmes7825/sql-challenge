@@ -26,9 +26,9 @@ For this project, I’ll design the tables to hold the data from the CSV files, 
 
 
 ## Setup
-* 		Run EmployeeSQL_schema.sql to set up tables
-*       To avoid errors, import the data in the same order as the corresponding tables got created. And, remember to account for the headers when doing the imports.
-* 		Review EmployeeSQL_analysis.sql for data analysis questions
+* 	Run EmployeeSQL_schema.sql to set up tables
+*   To avoid errors, import the data in the same order as the corresponding tables got created. And, remember to account for the headers when doing the imports.
+* 	Review EmployeeSQL_analysis.sql for data analysis questions
 
 ## Data Analysis
 *   List the employee number, last name, first name, sex, and salary of each employee.
